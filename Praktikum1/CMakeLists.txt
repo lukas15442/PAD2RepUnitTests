@@ -35,5 +35,5 @@ ELSE (CPPUNIT_INCLUDE_DIR)
     ENDIF (CPPUNIT_FIND_REQUIRED)
 ENDIF (CPPUNIT_INCLUDE_DIR)
 
-add_executable(cppunitTemplate main.cpp MyTest.cpp MyTest.h MyXmlOutputterHook.cpp MyXmlOutputterHook.h MyXmlOutputterHook.cpp)
+add_executable(cppunitTemplate main.cpp MatrixTest.cpp MatrixTest.h MyXmlOutputterHook.cpp MyXmlOutputterHook.h MyXmlOutputterHook.cpp Matrix.cpp Matrix.h TeacherMatrix.cpp TeacherMatrix.h)
 target_link_libraries(cppunitTemplate cppunit)

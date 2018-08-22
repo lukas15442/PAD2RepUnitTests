@@ -9,7 +9,7 @@
 #include <cppunit/extensions/TestFactoryRegistry.h>
 #include <cppunit/XmlOutputter.h>
 #include "MyXmlOutputterHook.h"
-#include "MyTest.h"
+#include "MatrixTest.h"
 
 const char *PROJECT_NAME = "PROJECT_NAME";
 const char *AUTHOR = "AUTHOR";
@@ -24,7 +24,7 @@ int main() {
     MyXmlOutputterHook hook(PROJECT_NAME, AUTHOR);
     outputter->addHook(&hook);
     runner.setOutputter(outputter);
-    runner.addTest(MyTest::suite());
+    runner.addTest(MatrixTest::suite());
     runner.run();
     outputFile.close();
 
